@@ -39,10 +39,10 @@ public class BookDAO {
 
         try {
             stmt = conn.prepareStatement(SQL_INSERT);
-            stmt.setInt(1, b.getId());
-            stmt.setString(2, b.getTitulo());
-            stmt.setString(3, b.getAutor());
-            stmt.setDouble(4, b.getPreco());
+           
+            stmt.setString(1, b.getTitulo());
+            stmt.setString(2, b.getAutor());
+            stmt.setDouble(3, b.getPreco());
 
             //Executa a query
             int auxRetorno = stmt.executeUpdate();
