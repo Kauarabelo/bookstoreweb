@@ -12,9 +12,54 @@
         <title>Aplicação Books Store</title>
     </head>
     <body>
+        <style>
+                        
+            body{
+                text-align: center;
+                font-family: 'Ubuntu', sans-serif;
+            }
+            
+            h1{
+                font-size: 50px;
+            }
+            
+            h2{
+                
+                font-size: 35px;
+                
+            }
+            
+            table{
+                
+               itens-align: center;
+               border: 3px solid black;
+               border-radius: 20px;
+               margin: auto;
+            }
+            
+            table th{
+                border-radius: 20px;
+                border: 2px solid black;
+                
+            }
+            
+            table td{
+                
+                border-radius: 10px;
+                
+            }
+            
+            p a{
+                
+                text-decoration: none;
+                margin: 6px;
+                
+            }
+        </style>
+        <br>
         <h1>Aplicação BookStoreWeb</h1>
-        <p><a href="<%=request.getContextPath()%>/new">Adicionar novo Livro</a></p>
-        <p><a href="<%=request.getContextPath()%>/list">Lista todos Livros</a></p>
+        <p><a href="<%=request.getContextPath()%>/new">Adicionar novo Livro</a>
+        <a href="<%=request.getContextPath()%>/list">Lista todos Livros</a></p>
 
         <div align="left">
             <c:if test="${book != null}">
@@ -25,7 +70,7 @@
                     </c:if>
                     <table border="1" cellpadding="5">
                         <caption>
-                            <h2>
+                            <h2 style = text-decoration: none;>
                                 <c:if test="${book != null}">
                                     Editar Livro
                                 </c:if>
