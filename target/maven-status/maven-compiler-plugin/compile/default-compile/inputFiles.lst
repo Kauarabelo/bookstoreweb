@@ -2,3 +2,6 @@ D:\Desenvolvimento\Dev Sys B\bookstoreweb\src\main\java\connection\MySQLConnecti
 D:\Desenvolvimento\Dev Sys B\bookstoreweb\src\main\java\local\kro\bookstoreweb\model\dao\BookDAO.java
 D:\Desenvolvimento\Dev Sys B\bookstoreweb\src\main\java\local\kro\bookstoreweb\model\bean\Book.java
 D:\Desenvolvimento\Dev Sys B\bookstoreweb\src\main\java\local\kro\bookstoreweb\controller\BookServlet.java
+D:\Desenvolvimento\Dev Sys B\bookstoreweb\src\main\java\local\kro\bookstoreweb\model\bean\User.java
+D:\Desenvolvimento\Dev Sys B\bookstoreweb\src\main\java\local\kro\bookstoreweb\model\dao\UserDAO.java
+D:\Desenvolvimento\Dev Sys B\bookstoreweb\src\main\java\local\kro\bookstoreweb\controller\UserServlet.java

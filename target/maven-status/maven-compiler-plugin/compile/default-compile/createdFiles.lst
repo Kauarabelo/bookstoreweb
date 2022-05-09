@@ -1,1 +1,7 @@
+local\kro\bookstoreweb\model\dao\BookDAO.class
+local\kro\bookstoreweb\controller\UserServlet.class
+local\kro\bookstoreweb\model\bean\Book.class
+local\kro\bookstoreweb\model\dao\UserDAO.class
 connection\MySQLConnection.class
+local\kro\bookstoreweb\controller\BookServlet.class
+local\kro\bookstoreweb\model\bean\User.class

@@ -4,11 +4,18 @@
         <servlet-name>BookServlet</servlet-name>
         <servlet-class>local.kro.bookstoreweb.controller.BookServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>local.kro.bookstoreweb.controller.UserServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>BookServlet</servlet-name>
         <url-pattern>/bstore/*</url-pattern>
     </servlet-mapping>
-
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/bsuser/*</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
