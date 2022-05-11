@@ -6,7 +6,6 @@
 package local.kro.bookstoreweb.controller;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.logging.Level;
@@ -131,7 +130,7 @@ public class UserServlet extends HttpServlet {
         Logger.getLogger(UserDAO.class.getName()).log(Level.INFO,
                 "Total de registros: {0}", listaUser.size());
 
-        request.setAttribute("listaBook", listaUser);
+        request.setAttribute("listaUsers", listaUser);
 
         RequestDispatcher dispatcher = request.getRequestDispatcher("/UserList.jsp");
         dispatcher.forward(request, response);

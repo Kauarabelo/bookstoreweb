@@ -1,7 +1,9 @@
 D:\Desenvolvimento\Dev Sys B\bookstoreweb\src\main\java\connection\MySQLConnection.java
 D:\Desenvolvimento\Dev Sys B\bookstoreweb\src\main\java\local\kro\bookstoreweb\model\dao\BookDAO.java
+D:\Desenvolvimento\Dev Sys B\bookstoreweb\src\main\java\local\kro\bookstoreweb\controller\UserLogoutServlet.java
 D:\Desenvolvimento\Dev Sys B\bookstoreweb\src\main\java\local\kro\bookstoreweb\model\bean\Book.java
 D:\Desenvolvimento\Dev Sys B\bookstoreweb\src\main\java\local\kro\bookstoreweb\controller\BookServlet.java
 D:\Desenvolvimento\Dev Sys B\bookstoreweb\src\main\java\local\kro\bookstoreweb\model\bean\User.java
 D:\Desenvolvimento\Dev Sys B\bookstoreweb\src\main\java\local\kro\bookstoreweb\model\dao\UserDAO.java
+D:\Desenvolvimento\Dev Sys B\bookstoreweb\src\main\java\local\kro\bookstoreweb\controller\UserLoginServlet.java
 D:\Desenvolvimento\Dev Sys B\bookstoreweb\src\main\java\local\kro\bookstoreweb\controller\UserServlet.java

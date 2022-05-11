@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <head>
-        <title>Aplicação Books Store</title>
+        <title>Aplicação Books Store User</title>
     </head>
     <body>
         <div class="container">
@@ -87,21 +87,21 @@
                                     <input type="hidden" name="formId" value="<c:out value='${book.id}' />" />
                                 </c:if>
                                 <tr>
-                                    <th>Titulo: </th>
+                                    <th>Email: </th>
                                     <td>
-                                        <input type="text" name="formTitulo" size="45" value="<c:out value='${book.titulo}' />"/>
+                                        <input type="text" name="formEmail" size="45" value="<c:out value='${book.titulo}' />"/>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>Autor: </th>
+                                    <th>FullName: </th>
                                     <td>
-                                        <input type="text" name="formAutor" size="45" value="<c:out value='${book.autor}' />"/>
+                                        <input type="text" name="formFullname" size="45" value="<c:out value='${book.autor}' />"/>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>Preco: </th>
+                                    <th>Password: </th>
                                     <td>
-                                        <input type="text" name="formPreco" size="5" value="<c:out value='${book.preco}' />"/>
+                                        <input type="text" name="formPassword" size="5" value="<c:out value='${book.preco}' />"/>
                                     </td>
                                 </tr>
                                 <tr>

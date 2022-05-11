@@ -13,51 +13,7 @@
         <title>Aplicação BookStoreWeb</title>
     </head>
     <body>
-        <!--        <style>
-                    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
         
-                    body{
-                        text-align: center;
-                        font-family: 'Ubuntu', sans-serif;
-                    }
-        
-                    h1{
-                        font-size: 50px;
-                    }
-        
-                    h2{
-        
-                        font-size: 35px;
-        
-                    }
-        
-                    table{
-        
-                        itens-align: center;
-                        border: 3px solid black;
-                        border-radius: 20px;
-                        margin: auto;
-                    }
-        
-                    table th{
-                        border-radius: 20px;
-                        border: 2px solid black;
-        
-                    }
-        
-                    table td{
-        
-                        border-radius: 10px;
-        
-                    }
-        
-                    p a{
-        
-                        text-decoration: none;
-                        margin: 6px;
-        
-                    }
-                </style>-->
         <br>
 
         <jsp:include page="contents/cabecalho.jsp"/>
@@ -84,10 +40,10 @@
                         <td><c:out value="${book.preco}" /></td>
                         <td>
                             <a href="<%=request.getContextPath()%>/edit?id=<c:out value='${book.id}'/>">
-                                <span class = "glyphicon glyphicon-pencil"/>
+                                Editar
                             </a>&nbsp;&nbsp;&nbsp;&nbsp;
                             <a href="<%=request.getContextPath()%>/delete?id=<c:out value='${book.id}'/>">
-                                <span class = "glyphicon glyphicon-trash"/>
+                                Excluir
                             </a>
                         </td>
                     </tr>

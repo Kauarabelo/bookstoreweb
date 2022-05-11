@@ -73,14 +73,16 @@
                     <th>Email</th>
                     <th>FullName</th>
                     <th>Password</th>
+                    <th>Ações</th>
                 </tr>
 
-                <c:forEach var="user" items="${listaUsers}">
+                <c:forEach var="us" items="${listaUsers}">
                     <tr>
-                        <td><c:out value="${user.id}" /></td>
-                        <td><c:out value="${user.email}" /></td>
-                        <td><c:out value="${user.fullname}" /></td>
-                        <td><c:out value="${user.password}" /></td>
+                        <td><c:out value="${us.id}" /></td>
+                        <td><c:out value="${us.email}" /></td>
+                        <td><c:out value="${us.fullname}" /></td>
+                        <td><c:out value="${us.password}" /></td>
+                        
                         <td>
                             <a href="<%=request.getContextPath()%>/edit?id=<c:out value='${user.id}'/>">
                                 Edit

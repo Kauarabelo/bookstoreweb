@@ -204,7 +204,7 @@ public class UserDAO {
         try {
             stmt = conn.prepareStatement(SQL_VERIFY);
             stmt.setString(1, email);
-            stmt.setString(1, password);
+            stmt.setString(2, password);
             rs = stmt.executeQuery();
 
             if (rs.next()) {
