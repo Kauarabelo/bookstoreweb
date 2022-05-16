@@ -18,51 +18,50 @@
 
         <div class="container-fluid" align="center">
 
-                    <!--Titulo-->
-                    <h1 class="container-fluid p-5 bg-primary text-white text-center">Admin Login</h1>
-                    <form action="login" method="post">
+            <jsp:include page="contents/cabecalhoLogin.jsp"/>
 
-                        <!--Campo Email-->
-                        <div class="form-outline mb-4">
 
-                            <input class="form-control" name="email" placeholder="Digite seu email" size="30" />
-                            <br>
-                            <label class="form-label" for="email">Email</label>
+                <!--Campo Email-->
+                <div class="form-outline mb-4">
 
-                        </div>
+                    <input class="form-control" name="email" placeholder="Digite seu email" size="30" />
+                    <br>
+                    <label class="form-label" for="email">Email</label>
 
-                        <!--Campo Senha-->
-                        <div class="form-outline mb-4">
-
-                            <input class="form-control" type="password" name="password" placeholder="Digite sua senha" size="30" />
-                            <br>
-                            <label class="form-label" for="password">Password</label>
-
-                        </div>
-
-                        <!--
-                        Esse atributo MESSAGE será utilizado como retorno de
-                       mensagem ao usuário caso
-                        login inválido.
-                        -->
-                        ${message}<br><br>
-                        <!--Bottom-->
-                        <button class="btn btn-primary btn-lg" type="submit"
-                                style="padding-left: 2.5rem; padding-right: 2.5rem;">
-                            Login
-                        </button>
-
-                        <!--Registro-->
-                        <p class="small fw-bold mt-2 pt-1 mb-0">Não tem uma conta? <a href="/bookstoreweb/bsuser/new"
-                                                                                      class="link-danger">Registro</a></p>
-                    </form>
                 </div>
+
+                <!--Campo Senha-->
+                <div class="form-outline mb-4">
+
+                    <input class="form-control" type="password" name="password" placeholder="Digite sua senha" size="30" />
+                    <br>
+                    <label class="form-label" for="password">Password</label>
+
+                </div>
+
+                <!--
+                Esse atributo MESSAGE será utilizado como retorno de
+               mensagem ao usuário caso
+                login inválido.
+                -->
+                ${message}<br><br>
+                <!--Bottom-->
+                <button class="btn btn-primary btn-lg" type="submit"
+                        style="padding-left: 2.5rem; padding-right: 2.5rem;">
+                    Login
+                </button>
+
+                <!--Registro-->
+                <p class="small fw-bold mt-2 pt-1 mb-0">Não tem uma conta? <a href="/bookstoreweb/bsuser/new"
+                                                                              class="link-danger">Registro</a></p>
+            </form>
         </div>
+    </div>
 
 
-    </form>
+</form>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 </html>

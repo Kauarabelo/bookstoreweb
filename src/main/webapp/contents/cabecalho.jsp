@@ -6,17 +6,22 @@
 
 <!-- Inicio cabecalho-->
 
-<div class="container-fluid p-5 bg-primary text-white text-center"><h1>Aplicação BookStore</h1></div>
+<div class=" p-4 bg-primary text-white text-center"><h1>Aplicação BookStore</h1>
 
-<div>
+<div class = "col-6 mx-auto">
     
-    <a href="<%=request.getContextPath()%>/bstore/new" class="btn btn-outline-primary">
+    <a href="<%=request.getContextPath()%>/bstore/new" class="btn btn-outline-light">
         <span class="glyphicon glyphicon-plus"></span>Adicionar novo Livro</a>
 
-    <a href="<%=request.getContextPath()%>/bstore/list" class="btn btn-outline-primary ">
+    <a href="<%=request.getContextPath()%>/bstore/list" class="btn btn-outline-light ">
         <span class="glyphicon glyphicon-th-list"></span>
         Lista todos Livros</a>
+    
+    <a href="<%=request.getContextPath()%>/bsuser/list" class="btn btn-outline-light ">
+        <span class="glyphicon glyphicon-th-list"></span>
+        Listar usuarios</a>
 
 </div>
+        </div>
 
 <!-- Fim cabecalho-->

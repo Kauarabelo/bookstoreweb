@@ -13,7 +13,7 @@
         <title>Aplicação BookStoreWeb</title>
     </head>
     <body>
-        
+
         <br>
 
         <jsp:include page="contents/cabecalho.jsp"/>
@@ -23,7 +23,6 @@
         <div class = "container mt-3">
             <table class = "table table-striped">
 
-                <caption><h2>List of Books</h2></caption>
                 <tr>
                     <th>ID</th>
                     <th>Titulo</th>

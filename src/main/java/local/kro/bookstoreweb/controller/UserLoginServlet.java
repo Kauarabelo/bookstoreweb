@@ -6,7 +6,6 @@
 package local.kro.bookstoreweb.controller;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.logging.*;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

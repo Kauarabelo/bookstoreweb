@@ -27,7 +27,7 @@ public class UserDAO {
     private static final String SQL_UPDATE = "UPDATE user SET email = ?,"
             + "password = ?, fullname = ?";
     private static final String SQL_DELETE = "DELETE FROM user WHERE id = ?";
-    private static final String SQL_VERIFY = "SELECT fullname FROM user WHERE email = ? AND password = ?";
+    private static final String SQL_VERIFY = "SELECT * FROM user WHERE email = ? AND password = ?";
 
     /**
      * Insere um usuario na base de dados User
