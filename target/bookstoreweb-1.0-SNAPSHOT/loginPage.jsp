@@ -53,7 +53,7 @@
 
                 <!--Registro-->
                 <p class="small fw-bold mt-2 pt-1 mb-0">Não tem uma conta? <a href="/bookstoreweb/bsuser/new"
-                                                                              class="link-danger">Registro</a></p>
+                                                                              class="link-danger">Registre-se</a></p>
             </form>
         </div>
     </div>

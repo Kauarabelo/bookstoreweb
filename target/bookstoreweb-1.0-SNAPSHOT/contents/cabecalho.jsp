@@ -20,6 +20,9 @@
     <a href="<%=request.getContextPath()%>/bsuser/list" class="btn btn-outline-light ">
         <span class="glyphicon glyphicon-th-list"></span>
         Listar usuarios</a>
+    <a href="<%=request.getContextPath()%>/logout" class="btn btn-outline-light ">
+        <span class="glyphicon glyphicon-th-list"></span>
+        Sair</a>
 
 </div>
         </div>

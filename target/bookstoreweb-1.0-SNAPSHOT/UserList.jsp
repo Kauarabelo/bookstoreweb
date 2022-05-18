@@ -40,15 +40,16 @@
                         <td><c:out value="${us.password}" /></td>
                         
                         <td>
-                            <a href="<%=request.getContextPath()%>/edit?id=<c:out value='${user.id}'/>">
+                            <a href="<%=request.getContextPath()%>/bsuser/edit?id=<c:out value='${user.id}'/>">
                                 Edit
                             </a>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="<%=request.getContextPath()%>/delete?id=<c:out value='${user.id}'/>">
+                            <a href="<%=request.getContextPath()%>/bsuser/delete?id=<c:out value='${user.id}'/>">
                                 Delete
                             </a>
                         </td>
                     </tr>
                 </c:forEach>
+                    
             </table>
         </div>
 

@@ -38,10 +38,10 @@
                         <td><c:out value="${book.autor}" /></td>
                         <td><c:out value="${book.preco}" /></td>
                         <td>
-                            <a href="<%=request.getContextPath()%>/edit?id=<c:out value='${book.id}'/>">
+                            <a href="<%=request.getContextPath()%>/bstore/edit?id=<c:out value='${book.id}'/>">
                                 Editar
                             </a>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="<%=request.getContextPath()%>/delete?id=<c:out value='${book.id}'/>">
+                            <a href="<%=request.getContextPath()%>/bstore/delete?id=<c:out value='${book.id}'/>">
                                 Excluir
                             </a>
                         </td>

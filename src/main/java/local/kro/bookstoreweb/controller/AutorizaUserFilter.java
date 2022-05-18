@@ -23,7 +23,7 @@ import local.kro.bookstoreweb.model.bean.User;
  *
  * @author devsys-b
  */
-@WebFilter(filterName = "AutorizaUserFilter", urlPatterns = {"/bstore/*"})
+@WebFilter(filterName = "AutorizaUserFilter", urlPatterns = {"/bstore/*", "/bsuser/*"})
 public class AutorizaUserFilter implements Filter{
 
     @Override
@@ -40,9 +40,14 @@ public class AutorizaUserFilter implements Filter{
         
         HttpServletRequest httpRequest = (HttpServletRequest) request;
         
+        String servletPath = httpRequest.getServletPath();
+        String actionPath = httpRequest.getPathInfo();
+        
+        
+        
         // Carrega a session caso exista.
         HttpSession session = httpRequest.getSession(false);
-        boolean isUsuarioLogado = (session != null && session.getAttribute("user") != null);
+        boolean isUsuarioLogado = (session != null && session.getAttribute("user") != null) || (servletPath.equals("/bsuser/"));
         
         if (isUsuarioLogado) {
             // Tudo ok! Ususario com session autorizado e segue requisição.
@@ -60,7 +65,7 @@ public class AutorizaUserFilter implements Filter{
             Logger.getLogger(AutorizaUserFilter.class.getName()).log(Level.INFO,
                     "Usuario NÃO autenticado: ");
             
-            RequestDispatcher dispatcher = request.getRequestDispatcher("/loginPage.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("/login");
             dispatcher.forward(request, response);
         
         }
